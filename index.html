@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reposicao</title>
+    <!-- Metadados -->
+    <!-- São os responsaveis por dar dicas de seu conteudo para os motores de busca dos navegadores -->
+    <meta name="description" content="Exemplo de página HTML">
+    <meta name="author" content="Gabriel Epprecht">
+
+    <!-- Estilos ou links para arquivos CSS -->
+    <!-- Importando estilo CSS de outro arquivo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <!-- Ira definir o top da sua página -->
+    <header>
+        <h1>Minha Página</h1>
+        <nav>
+            <ul>
+                <!-- href, fazem a parte de redirecionar o usuario -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <!-- Bloco onde estara o conteudo do seu site -->
+    <main>
+        <section>
+            <h2>Sobre</h2>
+            <p>Texto sobre sua página.</p>
+            <img src="caminho da imagem" alt="Descrição da imagem">
+        </section>
+
+        <!-- Formulário -->
+        <!-- formulario para pegar dados -->
+        <section>
+            <h2>Entre em Contato</h2>
+            <form action="/submit-form" method="post">
+                <label for="nome">Nome:</label>
+                <br><br>
+                <input type="text" id="nome" name="nome" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <br><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensagem">Mensagem:</label>
+                <br><br>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <!-- parte final do site para seu cliente -->
+    <footer>
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
